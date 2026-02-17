@@ -1,0 +1,74 @@
+name: Enhanced MLOps CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  PYTHONPATH: .
+
+jobs:
+  test:
+    name: Test MLOps Platform
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install fastapi uvicorn scikit-learn mlflow joblib numpy pandas pydantic python-multipart requests pytest httpx setuptools
+    
+    - name: Train ML models
+      run: |
+        echo "🤖 Training ML models..."
+        python models/trainer.py
+        echo "✅ Models trained successfully"
+    
+    - name: Start FastAPI server
+      run: |
+        echo "🚀 Starting FastAPI server..."
+        python app/main.py &
+        sleep 15
+        echo "✅ API server started"
+    
+    - name: Run API tests
+      run: |
+        echo "🧪 Running comprehensive test suite..."
+        python tests/test_api.py
+        echo "✅ All tests passed"
+    
+    - name: Test API endpoints
+      run: |
+        echo "🔍 Testing core endpoints..."
+        curl -f http://localhost:8000/health
+        curl -f http://localhost:8000/models
+        echo "✅ API endpoints responding correctly"
+
+  deployment-ready:
+    name: Ready for Production
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Deployment Status
+      run: |
+        echo "🎉 Enhanced MLOps Platform - All Systems Go!"
+        echo "✅ API Tests: PASSED"
+        echo "✅ Model Training: SUCCESSFUL"
+        echo "✅ Health Checks: OPERATIONAL"
+        echo "✅ CI/CD Pipeline: ACTIVE"
+        echo ""
+        echo "🚀 Production Deployment Status: READY"
+        echo "📊 Platform: Fully operational and tested"
+        echo "🔗 Next: Azure cloud deployment"
