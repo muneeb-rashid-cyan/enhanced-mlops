@@ -98,7 +98,7 @@ deploy:
         echo "- Models: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net/models" 
         echo "- Docs: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net/docs"
 
-  deployment-ready:
+deployment-ready:
     name: Production Status
     needs: [test, deploy]
     runs-on: ubuntu-latest
