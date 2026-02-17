@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199/models/m-7889244e22bc4aca9d2575940a62b0ed/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.9.0
+model_id: m-7889244e22bc4aca9d2575940a62b0ed
+model_size_bytes: 157994
+model_uuid: m-7889244e22bc4aca9d2575940a62b0ed
+prompts: null
+run_id: 8e3e9a2d96d84fbba41d6906aa141ee6
+utc_time_created: '2026-02-16 13:31:56.430378'

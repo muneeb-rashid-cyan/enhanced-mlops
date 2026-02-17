@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199/8e3e9a2d96d84fbba41d6906aa141ee6/artifacts
+end_time: 1771248722005
+entry_point_name: ''
+experiment_id: '728523735300076199'
+lifecycle_stage: active
+run_id: 8e3e9a2d96d84fbba41d6906aa141ee6
+run_name: casual-bass-183
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771248715422
+status: 3
+tags: []
+user_id: Asus

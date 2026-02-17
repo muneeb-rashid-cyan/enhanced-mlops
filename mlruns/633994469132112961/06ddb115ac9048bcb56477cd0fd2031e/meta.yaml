@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/633994469132112961/06ddb115ac9048bcb56477cd0fd2031e/artifacts
+end_time: 1771247812290
+entry_point_name: ''
+experiment_id: '633994469132112961'
+lifecycle_stage: active
+run_id: 06ddb115ac9048bcb56477cd0fd2031e
+run_name: brawny-hen-535
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771247811011
+status: 4
+tags: []
+user_id: Asus

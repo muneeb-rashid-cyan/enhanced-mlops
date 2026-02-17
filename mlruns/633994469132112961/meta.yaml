@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/633994469132112961
+creation_time: 1771247810987
+experiment_id: '633994469132112961'
+last_update_time: 1771247810987
+lifecycle_stage: active
+name: wine_classification

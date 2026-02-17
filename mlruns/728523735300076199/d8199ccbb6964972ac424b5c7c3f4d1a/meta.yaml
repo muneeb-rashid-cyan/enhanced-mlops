@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199/d8199ccbb6964972ac424b5c7c3f4d1a/artifacts
+end_time: 1771247810383
+entry_point_name: ''
+experiment_id: '728523735300076199'
+lifecycle_stage: active
+run_id: d8199ccbb6964972ac424b5c7c3f4d1a
+run_name: illustrious-mink-481
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771247810008
+status: 4
+tags: []
+user_id: Asus

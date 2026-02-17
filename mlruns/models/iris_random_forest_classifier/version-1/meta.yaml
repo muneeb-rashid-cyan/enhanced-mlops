@@ -1,0 +1,15 @@
+creation_timestamp: 1771248721861
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1771248721861
+model_id: m-7889244e22bc4aca9d2575940a62b0ed
+name: iris_random_forest_classifier
+run_id: 8e3e9a2d96d84fbba41d6906aa141ee6
+run_link: null
+source: models:/m-7889244e22bc4aca9d2575940a62b0ed
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199/models/m-7889244e22bc4aca9d2575940a62b0ed/artifacts
+user_id: null
+version: 1

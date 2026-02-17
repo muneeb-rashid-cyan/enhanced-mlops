@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/633994469132112961/6a8749aefd2347908152f8f6648b9af3/artifacts
+end_time: 1771247812945
+entry_point_name: ''
+experiment_id: '633994469132112961'
+lifecycle_stage: active
+run_id: 6a8749aefd2347908152f8f6648b9af3
+run_name: righteous-stoat-148
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771247812307
+status: 4
+tags: []
+user_id: Asus

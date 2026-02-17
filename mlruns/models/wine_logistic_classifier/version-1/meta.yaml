@@ -1,0 +1,15 @@
+creation_timestamp: 1771248729520
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1771248729520
+model_id: m-f397eb70f252468eb701e127cab0230d
+name: wine_logistic_classifier
+run_id: 2bb85563e2004e34a9e5cf8333500cda
+run_link: null
+source: models:/m-f397eb70f252468eb701e127cab0230d
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/633994469132112961/models/m-f397eb70f252468eb701e127cab0230d/artifacts
+user_id: null
+version: 1

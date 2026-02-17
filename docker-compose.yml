@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # Main Enhanced MLOps API service
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    container_name: enhanced-mlops-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=info
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    volumes:
+      # Mount for development (comment out for production)
+      - ./app:/app/app
+      - ./models:/app/models
+      - ./mlruns:/app/mlruns
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    networks:
+      - mlops-network
+    depends_on:
+      mlflow:
+        condition: service_healthy
+
+  # MLflow Tracking Server
+  mlflow:
+    image: python:3.11-slim
+    container_name: enhanced-mlops-mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlflow/mlruns
+      - ./mlflow-artifacts:/mlflow/artifacts
+    working_dir: /mlflow
+    environment:
+      - MLFLOW_BACKEND_STORE_URI=file:///mlflow/mlruns
+      - MLFLOW_DEFAULT_ARTIFACT_ROOT=/mlflow/artifacts
+    command: >
+      bash -c "
+        pip install mlflow==2.8.1 &&
+        mlflow se

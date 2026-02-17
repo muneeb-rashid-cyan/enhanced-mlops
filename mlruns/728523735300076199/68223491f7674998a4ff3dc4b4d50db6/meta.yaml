@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199/68223491f7674998a4ff3dc4b4d50db6/artifacts
+end_time: 1771247810978
+entry_point_name: ''
+experiment_id: '728523735300076199'
+lifecycle_stage: active
+run_id: 68223491f7674998a4ff3dc4b4d50db6
+run_name: crawling-ant-189
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771247810394
+status: 4
+tags: []
+user_id: Asus

@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199/models/m-b82d5424129b4fdd8223154be580b888/artifacts
+creation_timestamp: 1771248705514
+experiment_id: '728523735300076199'
+last_updated_timestamp: 1771248715209
+model_id: m-b82d5424129b4fdd8223154be580b888
+model_type: null
+name: model
+source_run_id: 55d7509624fe4b7d93a991ddf8e423c4
+status: 2
+status_message: null

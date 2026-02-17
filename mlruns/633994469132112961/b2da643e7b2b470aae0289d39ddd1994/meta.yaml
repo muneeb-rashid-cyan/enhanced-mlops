@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/633994469132112961/b2da643e7b2b470aae0289d39ddd1994/artifacts
+end_time: 1771248735140
+entry_point_name: ''
+experiment_id: '633994469132112961'
+lifecycle_stage: active
+run_id: b2da643e7b2b470aae0289d39ddd1994
+run_name: overjoyed-midge-776
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771248729639
+status: 3
+tags: []
+user_id: Asus

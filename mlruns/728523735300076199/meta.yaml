@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/728523735300076199
+creation_time: 1771247808366
+experiment_id: '728523735300076199'
+last_update_time: 1771247808366
+lifecycle_stage: active
+name: iris_classification

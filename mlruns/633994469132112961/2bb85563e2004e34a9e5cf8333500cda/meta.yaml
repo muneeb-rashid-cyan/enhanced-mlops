@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Asus/Documents/Azure_Mlops_Hands_On/enhanced_mlops_P2/mlruns/633994469132112961/2bb85563e2004e34a9e5cf8333500cda/artifacts
+end_time: 1771248729622
+entry_point_name: ''
+experiment_id: '633994469132112961'
+lifecycle_stage: active
+run_id: 2bb85563e2004e34a9e5cf8333500cda
+run_name: orderly-snake-773
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771248722026
+status: 3
+tags: []
+user_id: Asus
