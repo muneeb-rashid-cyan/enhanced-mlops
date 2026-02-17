@@ -113,7 +113,7 @@ deploy:
         echo "https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net"
 
 
-  deployment-ready:
+deployment-ready:
     name: Production Status
     needs: [test, deploy]
     runs-on: ubuntu-latest
