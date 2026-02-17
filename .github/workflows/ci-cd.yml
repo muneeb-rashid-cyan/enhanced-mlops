@@ -54,8 +54,7 @@ jobs:
         curl -f http://localhost:8000/models
         echo "✅ API endpoints responding correctly"
 
-
-deploy:
+  deploy:
     name: Deploy to Azure
     needs: test
     runs-on: ubuntu-latest
@@ -95,10 +94,10 @@ deploy:
         echo ""
         echo "🧪 Test endpoints:"
         echo "- Health: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net/health"
-        echo "- Models: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net/models" 
+        echo "- Models: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net/models"
         echo "- Docs: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net/docs"
 
-deployment-ready:
+  deployment-ready:
     name: Production Status
     needs: [test, deploy]
     runs-on: ubuntu-latest
